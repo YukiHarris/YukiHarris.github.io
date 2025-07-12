@@ -1,0 +1,130 @@
+/* Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #111;
+  box-shadow: 0 0 10px #fff3;
+}
+
+/* Заголовок */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Фото */
+.photo-wrapper {
+  margin: 2rem 0;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 25% 25%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Секция навыков */
+.skills {
+  margin-top: 1.5rem;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.skills li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.skills li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Адаптация для маленьких экранов */
+@media (max-width: 480px) {
+  .skills {
+    padding: 0;
+  }
+
+  .skills li {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+/* Информация */
+.info, .contacts {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: #ddd;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #aaa;
+}
